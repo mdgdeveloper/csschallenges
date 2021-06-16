@@ -1,0 +1,88 @@
+/* --------------------------------
+Main CSS 
+Event Manager 
+1.0 
+
+Coded by Sergio Madrigal
+06 2021
+
+*/
+
+
+/*
+
+-------------
+Material
+-------------
+
+*/
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 20px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons-outlined.md-18 { font-size: 18px; }
+.material-icons-outlined.md-24 { font-size: 21px; }
+.material-icons-outlined.md-36 { font-size: 36px; }
+.material-icons-outlined.md-48 { font-size: 48px; }
+
+
+
+/*
+-------------
+Imports
+-------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+------------
+Top Header
+------------
+*/
+
+.topHeader{
+    display: flex;
+    height: 40px;
+    background-color: rgb(18,87,129);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    padding-bottom: 5px;
+}
+
+.topHeader .info{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto 0 auto;
+    padding: 2px;
+    padding-top: 10px;
+    
+}
+
+.topHeader .info .info-data{
+    display: flex;
+}
+
+.topHeader .info .info-email{
+    display:flex;
+}
+
+.topHeader .social{
+    display: flex;
+}
+
+
+/*
+------------
+Main Header
+------------
+*/
