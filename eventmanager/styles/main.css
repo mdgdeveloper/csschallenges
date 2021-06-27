@@ -362,6 +362,7 @@ Top Footer
 
 .topFooter .box {
     display: flex;
+    justify-content: center;
     width: 65%;
     margin: 35px auto 0 auto;
 }
@@ -386,8 +387,10 @@ Logo Footer
 
 .logoFooter .logo-grid{
     display:flex;
+    justify-content: center;
     width: 90%;
     margin: 10px auto 0 auto;
+    
 }
 
 .logoFooter .logo-grid .logo{
@@ -404,10 +407,35 @@ mainFooter
 */
 .mainFooter{
     height: 400px;
-    background: #008;
-
+    background: linear-gradient(to bottom, rgb(0,42,48),rgb(0, 48, 40));
 
 }
 
 
+.mainFooter .footer-grid{
+    display:flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
 
+.mainFooter .footer-item{
+    font-family: Roboto;
+    padding: 30px 10px 30px 10px;
+    width: 400px;
+    margin-right: 5px;
+    color: rgb(21, 206, 147)
+}
+
+.mainFooter .footer-item h3{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mainFooter ul {
+    margin-top: 10px;
+}
+.mainFooter ul li{
+    padding-bottom: 5px;
+}
