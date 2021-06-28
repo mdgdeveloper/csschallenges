@@ -314,7 +314,7 @@ Sub Main
 }
 
 .subMain .line{
-    width: 63%;
+    width: 53%;
     margin: 0 auto 0 auto;
     padding-top: 50px;
 }
@@ -331,8 +331,8 @@ Sub Main
     padding-top: 10px;
     color: white;
     font-family: Roboto;
-    width: 63%;
-    font-size: 1.6em;
+    width: 53%;
+    font-size: 1.2em;
     margin: 0 auto 0 auto;
     opacity: 0.5;
     text-transform: uppercase;
@@ -342,10 +342,9 @@ Sub Main
     padding-top: 5px;
     color: white;
     font-family: Roboto;
-    width: 63%;
-    font-size: 2em;
+    width: 53%;
+    font-size: 1.65em;
     margin: 0 auto 0 auto;
-    font-weight: bold;
     opacity: 0.8;
     text-transform: uppercase;
 }
@@ -368,10 +367,22 @@ Top Footer
 }
 
 .topFooter .box .item{
-    background: #000;
     width: 250px;
     height: 200px;
     margin-right: 20px;
+}
+
+.topFooter .box .item .icon {
+    width: 40%;  
+    margin: 30px auto 0 auto;  
+}
+
+.topFooter .box .item .text{
+    font-family: Roboto;
+    font-size: 0.9em;
+    padding-top: 20px;
+    text-align: center;
+    color: rgb(11, 110, 94);
 }
 
 /*
@@ -397,7 +408,13 @@ Logo Footer
     margin-right: 20px;
     width: 250px;
     height: 120px;
-    background: #000;
+    opacity: 0.5;
+}
+
+.logoFooter .logo-grid .logo img{
+    width: 70%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 /*
