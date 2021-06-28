@@ -220,20 +220,23 @@ Event List
 
 .event-grid{
     display: flex;
-    width: 80%;
+    flex-flow: row wrap;
+    width: 90%;
     margin: 0 auto 0 auto;
+    justify-content: flex-start;
 
 
 }
 
 .event-single{
-    width: 300px;
+    width: 100px;
     background-repeat: no-repeat;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.85),rgba(0, 0, 0, 0)), url('../img/events/event01.png');
     background-size: cover;
     height: 400px;
     margin-right: 20px;
-
+    margin-top: 20px;
+    flex-basis: 22%;
 
 }
 
@@ -373,11 +376,13 @@ Top Footer
 }
 
 .topFooter .box .item .icon {
+    opacity: 0.5;
     width: 40%;  
     margin: 30px auto 0 auto;  
 }
 
 .topFooter .box .item .text{
+    opacity: 0.7;
     font-family: Roboto;
     font-size: 0.9em;
     padding-top: 20px;
@@ -392,6 +397,7 @@ Logo Footer
 */
 
 .logoFooter{
+    margin-top: 40px;
     height: 150px;
 
 }
