@@ -1,68 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Manager Version 1.0</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" type="text/css" href="styles/main.css" />
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Event Manager Version 1.0</title>
-</head>
+  <body>
+    <div class="topHeader">
+      <div class="info">
+        <div class="info-data">
+          <span class="material-icons-outlined md-24">place</span>
+          <div class="pl-2">Event Manager S.L., Silla, Valencia</div>
+        </div>
+        <div class="info-email">
+          <span class="material-icons-outlined md-24">alternate_email</span>
+          <div class="pl-2">eventManager@admin.com</div>
+        </div>
 
-<body>
-  <div class="topHeader">
-    <div class="info">
-      <div class="info-data">
-        <span class="material-icons-outlined md-24">place</span>
-        <div class="pl-2">Event Manager S.L., Silla, Valencia</div>
-      </div>
-      <div class="info-email">
-        <span class="material-icons-outlined md-24">alternate_email</span>
-        <div class="pl-2">eventManager@admin.com</div>
-      </div>
-
-      <div class="social">
-        <span class="material-icons-outlined md-24 pr-4">markunread</span>
-        <span class="material-icons-outlined md-24 pr-4">mode_comment</span>
-        <span class="material-icons-outlined md-24 pr-4">notifications</span>
+        <div class="social">
+          <span class="material-icons-outlined md-24 pr-4">markunread</span>
+          <span class="material-icons-outlined md-24 pr-4">mode_comment</span>
+          <span class="material-icons-outlined md-24 pr-4">notifications</span>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="mainHeader">
-    <div class="logo mt-4"></div>
-    <div class="menu">
-      <div class="menu-navigation">
-        <a href="#">
-          <div class="menu-item">Inicio</div>
-        </a>
-        <div class="menu-item">Eventos</div>
-        <div class="menu-item">COVID19</div>
-        <div class="menu-item">Contacto</div>
-        <a href="#">
-          <div class="menu-item-login">Acceso</div>
-        </a>
+    <div class="mainHeader">
+      <div class="logo mt-4"></div>
+      <div class="menu">
+        <div class="menu-navigation">
+          <a href="#">
+            <div class="menu-item">Inicio</div>
+          </a>
+          <div class="menu-item">Eventos</div>
+          <div class="menu-item">COVID19</div>
+          <div class="menu-item">Contacto</div>
+          <a href="#">
+            <div class="menu-item-login">Acceso</div>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="main">
-    <div class="background">
-      <div class="main-info p-10 text-right">
-        <div class="big ">Eventos</div>
-        <div class="small font-bold text-green-200 text-opacity-60">Seguros</div>
+    <div class="main">
+      <div class="background">
+        <div class="main-info p-10 text-right">
+          <div class="big">Eventos</div>
+          <div class="small font-bold text-green-200 text-opacity-60">
+            Seguros
+          </div>
+        </div>
+        <div class="main-button">
+          <div>
+            <button
+              class="
+                bg-green-500
+                hover:bg-green-700
+                text-white
+                py-2
+                px-4
+                rounded
+                uppercase
+                font-bold
+              "
+            >
+              Mas informacion
+            </button>
+          </div>
+          <div class="pt-2">
+            <button
+              class="
+                bg-green-500
+                hover:bg-green-700
+                text-white
+                py-2
+                px-4
+                rounded
+                uppercase
+                font-bold
+              "
+            >
+              Eventos Disponibles
+            </button>
+          </div>
+          <div class="pt-2">
+            <button
+              class="
+                bg-green-500
+                hover:bg-green-700
+                text-white
+                py-2
+                px-4
+                rounded
+                uppercase
+                font-bold
+              "
+            >
+              Últimas Entradas
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="main-button">
-        <div>
-          <button class="
+    </div>
+    <div class="interMain">
+      <h1 class="font-bold uppercase text-center pt-5">¡Bienvenidos!</h1>
+      <h2 class="font-bold uppercase text-green-400 text-center">
+        Volverse a divertir de forma segura.
+      </h2>
+      <div class="w-1/3 m-auto">
+        <p class="text-sm text-center">
+          Hoy más que nunca queremos volver a disfrutar de juntarnos, queremos
+          volver a sentir que todo vibra a nuestro alrededor al son de la
+          música. Pero, sobre todo, queremos hacerlo de forma segura.
+        </p>
+      </div>
+      <div class="text-center py-5">
+        <button
+          class="
+            text-sm
+            bg-red-500
+            hover:bg-red-700
+            text-white
+            py-2
+            px-4
+            rounded
+            uppercase
+          "
+        >
+          Normativa COVID-19
+        </button>
+      </div>
+    </div>
+    <div class="search-block">
+      Bloque de busqueda
+    </div>
+    <div class="mainBody">
+      <div class="event-grid pl-20">
+        <!--- Evento Unico -->
+
+        <div class="event-single rounded-2xl">
+          <div class="event-single-head">
+            <div class="fecha rounded-lg">
+              <div class="number">23</div>
+              <div class="month">JULIO</div>
+            </div>
+          </div>
+
+          <div class="event-info">
+            <div class="event-supratitle">Musica</div>
+            <div class="event-title">Concert de Txarango</div>
+            <div class="event-subtitle">Silla | Valencia</div>
+          </div>
+        </div>
+
+        <!--- Evento Unico -->
+
+        <!--- Evento Unico -->
+
+        <div class="event-single rounded-2xl">
+          <div class="event-single-head">
+            <div class="fecha rounded-lg">
+              <div class="number">23</div>
+              <div class="month">JULIO</div>
+            </div>
+          </div>
+
+          <div class="event-info">
+            <div class="event-supratitle">Musica</div>
+            <div class="event-title">Concert de Txarango</div>
+            <div class="event-subtitle">Silla | Valencia</div>
+          </div>
+        </div>
+
+        <!--- Evento Unico -->
+
+        <!--- Evento Unico: revisar margin -->
+
+        <div class="event-single rounded-2xl">
+          <div class="event-single-head">
+            <div class="fecha rounded-lg">
+              <div class="number">23</div>
+              <div class="month">JULIO</div>
+            </div>
+          </div>
+
+          <div class="event-info">
+            <div class="event-supratitle">Musica</div>
+            <div class="event-title">Concert de Txarango</div>
+            <div class="event-subtitle">Silla | Valencia</div>
+          </div>
+        </div>
+
+        <!--- Evento Unico -->
+
+        <!--- Evento Unico: revisar margin -->
+
+        <div class="event-single rounded-2xl">
+          <div class="event-single-head">
+            <div class="fecha rounded-lg">
+              <div class="number">23</div>
+              <div class="month">JULIO</div>
+            </div>
+          </div>
+
+          <div class="event-info">
+            <div class="event-supratitle">Musica</div>
+            <div class="event-title">Concert de Txarango</div>
+            <div class="event-subtitle">Silla | Valencia</div>
+          </div>
+        </div>
+
+        <!--- Evento Unico -->
+
+        <!--- Evento Unico: revisar margin -->
+
+        <div class="event-single rounded-2xl">
+          <div class="event-single-head">
+            <div class="fecha rounded-lg">
+              <div class="number">23</div>
+              <div class="month">JULIO</div>
+            </div>
+          </div>
+
+          <div class="event-info">
+            <div class="event-supratitle">Musica</div>
+            <div class="event-title">Concert de Txarango</div>
+            <div class="event-subtitle">Silla | Valencia</div>
+          </div>
+        </div>
+
+        <!--- Evento Unico -->
+      </div>
+    </div>
+    <div class="subMain">
+      <div class="line">
+        <div class="real-line"></div>
+      </div>
+      <div class="autor">Vivian Greene</div>
+      <div class="frase">
+        La vida no se trata de esperar a que pase la tormenta. Se trata de
+        aprender a bailar bajo la lluvia
+      </div>
+    </div>
+    <div class="topFooter">
+      <div class="box">
+        <div class="item">
+          <div class="icon">
+            <img src="img/icons/search.png" alt="search" />
+          </div>
+          <div class="text">Busca tus eventos favoritos rápidamente.</div>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <img src="img/icons/info.png" alt="info" />
+          </div>
+          <div class="text">
+            Obten informacion inmediata de las limitaciones sanitarias.
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <img src="img/icons/calendar.png" alt="calendar" />
+          </div>
+          <div class="text">
+            Organiza tu agenda y agrega la fecha del evento para no perdertelo.
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <img src="img/icons/ticket.png" alt="ticket" />
+          </div>
+          <div class="text">
+            Adquiere las entradas numeradas en preventa desde aqui.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="logoFooter">
+      <div class="logo-grid">
+        <div class="logo"><img src="img/logos/oms.jpg" alt="oms" /></div>
+        <div class="logo"><img src="img/logos/europa.png" alt="oms" /></div>
+        <div class="logo"><img src="img/logos/sanidad.jpg" alt="oms" /></div>
+        <div class="logo">
+          <img src="img/logos/generalitat.jpg" alt="oms" />
+        </div>
+        <div class="logo"><img src="img/logos/ajuntament.png" alt="oms" /></div>
+      </div>
+    </div>
+    <div class="mainFooter">
+      <div class="footer-grid">
+        <div class="footer-item">
+          <div class="footer-information">
+            <h3>Secciones</h3>
+            <ul>
+              <li>Inicio</li>
+              <li>Info Covid</li>
+              <li>Solicitar alta de evento</li>
+              <li>Preguntas frecuentes</li>
+              <li>Política de privacidad</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-information">
+            <h3>Contáctanos</h3>
+            <p>Eventor Solutions </p>
+            <p>📧 contacto@eventor.com</p>
+            <p>📱 (+34) 615 00 00 00</p>
+            <p>🏠 Silla. Valencia.</p>
+          </div>
+          <div class="footer-information">
+            <h3>Acerca de nosotros</h3>
+            <p>Info de la compañia</p>
+          </div>
+           
+        </div>
+        <div class="footer-item">
+         
+          <div class="logo">
+            <img src="img/logos/logoMain_white.png" alt="logoWhite" />
+          </div>
+        </div>
+        <div class="footer-item">
+          <h3>Suscribete</h3>
+          <p
+          class="
+          text-sm
+          pt-2
+          pb-1
+          "
+          >Suscríbete a nuestra lista de correo y entérate de los eventos más interesantes de tu zona al momento.</p>
+          <div class="mailing-list">
+            <input type="text" 
+            class="
+            text-sm
+            py-2
+            px-2
+            mb-2
+            mt-2
+            "
+            
+            placeholder="Introduce tu correo..."/>
+            <button
+            class="
+              text-sm
               bg-green-500
               hover:bg-green-700
               text-white
@@ -70,277 +377,21 @@
               px-4
               rounded
               uppercase
-
-              font-bold
-            ">
-            Mas informacion
-          </button>
-        </div>
-        <div class="
-        pt-2
-        ">
-          <button class="
-          bg-green-500
-          hover:bg-green-700
-            text-white
-            py-2
-            px-4
-            rounded
-            uppercase
-            font-bold
-          ">
-            Eventos Disponibles
-          </button>
-        </div>
-        <div class="
-      pt-2
-      ">
-          <button class="
-        bg-green-500
-        hover:bg-green-700
-          text-white
-          py-2
-          px-4
-          rounded
-          uppercase
-          font-bold
-        ">
-            Últimas Entradas
-          </button>
+            "
+          >Suscribirse</button>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="interMain">
-    <h1 class="
-      font-bold
-      uppercase
-      text-center
-      pt-5
-      ">
-      ¡Bienvenidos!
-    </h1>
-    <h2 class="
-      font-bold
-      uppercase
-      text-green-400
-      text-center
-
-      ">Volverse a divertir de forma segura.</h2>
-    <div class="w-1/3 m-auto">
       <p class="
       text-sm
       text-center
-      ">Hoy más que nunca queremos volver a disfrutar de juntarnos, queremos volver a sentir que todo vibra a nuestro
-        alrededor al son de la música. Pero, sobre todo, queremos hacerlo de forma segura.
-      </p>
+      text-green-600 ">Todos los derechos reservados para MDG Solutions. 
+      Desarrollada íntegramente por MDG Solutions.</p>
+            <p class="
+      text-sm
+      text-center
+      text-green-600 ">MDG Corporation © 2021.</p>
     </div>
-    <div class="text-center py-5">
-      <button class="
-        text-sm
-        bg-red-500
-        hover:bg-red-700
-          text-white
-          py-2
-          px-4
-          rounded
-          uppercase
-          
-        ">
-        Normativa COVID-19
-      </button>
     </div>
-
-  </div>
-  <div class="mainBody">
-    <div class="event-grid pl-20">
-
-            <!--- Evento Unico -->
-
-            <div class="event-single rounded-2xl">
-              <div class="event-single-head">
-                <div class="fecha rounded-lg">
-                  <div class="number">23</div>
-                  <div class="month">JULIO</div>
-                </div>
-      
-              </div>
-      
-              <div class="event-info">
-                <div class="event-supratitle">Musica</div>
-                <div class="event-title">Concert de Txarango</div>
-                <div class="event-subtitle">Silla | Valencia</div>
-              </div>
-            </div>
-      
-            <!--- Evento Unico -->
-
-      <!--- Evento Unico -->
-
-      <div class="event-single rounded-2xl">
-        <div class="event-single-head">
-          <div class="fecha rounded-lg">
-            <div class="number">23</div>
-            <div class="month">JULIO</div>
-          </div>
-
-        </div>
-
-        <div class="event-info">
-          <div class="event-supratitle">Musica</div>
-          <div class="event-title">Concert de Txarango</div>
-          <div class="event-subtitle">Silla | Valencia</div>
-        </div>
-      </div>
-
-      <!--- Evento Unico -->
-
-      <!--- Evento Unico: revisar margin -->
-
-      <div class="event-single rounded-2xl">
-        <div class="event-single-head">
-          <div class="fecha rounded-lg">
-            <div class="number">23</div>
-            <div class="month">JULIO</div>
-          </div>
-
-        </div>
-
-        <div class="event-info">
-          <div class="event-supratitle">Musica</div>
-          <div class="event-title">Concert de Txarango</div>
-          <div class="event-subtitle">Silla | Valencia</div>
-        </div>
-      </div>
-
-      <!--- Evento Unico -->
-
-      <!--- Evento Unico: revisar margin -->
-
-      <div class="event-single rounded-2xl">
-        <div class="event-single-head">
-          <div class="fecha rounded-lg">
-            <div class="number">23</div>
-            <div class="month">JULIO</div>
-          </div>
-
-        </div>
-
-        <div class="event-info">
-          <div class="event-supratitle">Musica</div>
-          <div class="event-title">Concert de Txarango</div>
-          <div class="event-subtitle">Silla | Valencia</div>
-        </div>
-      </div>
-
-      <!--- Evento Unico -->
-
-
-      <!--- Evento Unico: revisar margin -->
-
-      <div class="event-single rounded-2xl">
-        <div class="event-single-head">
-          <div class="fecha rounded-lg">
-            <div class="number">23</div>
-            <div class="month">JULIO</div>
-          </div>
-
-        </div>
-
-        <div class="event-info">
-          <div class="event-supratitle">Musica</div>
-          <div class="event-title">Concert de Txarango</div>
-          <div class="event-subtitle">Silla | Valencia</div>
-        </div>
-      </div>
-
-      <!--- Evento Unico -->
-
-
-    </div>
-  </div>
-  <div class="subMain">
-    <div class="line">
-      <div class="real-line"></div>
-    </div>
-    <div class="autor">Vivian Greene</div>
-    <div class="frase">La vida no se trata de esperar a que pase la tormenta. Se trata de aprender a bailar bajo la
-      lluvia</div>
-
-  </div>
-  <div class="topFooter">
-    <div class="box">
-      <div class="item">
-        <div class="icon">
-          <img src="img/icons/search.png" alt="search" />
-        </div>
-        <div class="text">
-          Busca tus eventos favoritos rápidamente.
-        </div>
-      </div>
-      <div class="item">
-        <div class="icon">
-          <img src="img/icons/info.png" alt="info" />
-        </div>
-        <div class="text">
-          Obten informacion inmediata de las limitaciones sanitarias.
-        </div>
-      </div>
-      <div class="item">
-        <div class="icon">
-          <img src="img/icons/calendar.png" alt="calendar" />
-        </div>
-        <div class="text">
-          Organiza tu agenda y agrega la fecha del evento para no perdertelo.
-        </div>
-      </div>
-      <div class="item">
-        <div class="icon">
-          <img src="img/icons/ticket.png" alt="ticket" />
-        </div>
-        <div class="text">
-          Adquiere las entradas numeradas en preventa desde aqui.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="logoFooter">
-    <div class="logo-grid">
-      <div class="logo"><img src="img/logos/oms.jpg" alt="oms" /></div>
-      <div class="logo"><img src="img/logos/europa.png" alt="oms" /></div>
-      <div class="logo"><img src="img/logos/sanidad.jpg" alt="oms" /></div>
-      <div class="logo"><img src="img/logos/generalitat.jpg" alt="oms" /></div>
-      <div class="logo"><img src="img/logos/ajuntament.png" alt="oms" /></div>
-    </div>
-  </div>
-  <div class="mainFooter">
-    <div class="footer-grid">
-      <div class="footer-item">
-        <div class="footer-information">
-          <h3>Secciones</h3>
-          <ul>
-            <li>Inicio</li>
-            <li>Info Covid</li>
-            <li>Inicio</li>
-
-          </ul>
-        </div>
-        <div class="footer-social-media"></div>
-      </div>
-      <div class="footer-item">
-        Item 2
-      </div>
-      <div class="footer-item">
-        Item 3
-      </div>
-      <div class="footer-item">
-        Item 4
-      </div>
-
-    </div>
-
-
-  </div>
-</body>
-
+  </body>
 </html>
